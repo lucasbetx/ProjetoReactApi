@@ -1,0 +1,10 @@
+.userpost{
+  max-width: 60rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  text-align: -webkit-center;
+  margin-top: 5rem;
+  padding: 3rem;
+  background-color: aqua;
+  border-radius: 1rem;
+}
