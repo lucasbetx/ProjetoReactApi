@@ -1,0 +1,16 @@
+.user{
+  display: grid;
+  grid-template-columns: 1fr ;
+  background-color:white;
+  margin: 70px auto;
+  padding: 30px;
+  max-width: 655px;
+  border-radius: 10px;
+  justify-items: center;
+  border: solid;
+}
+
+.imgUser{
+  max-width: 35%;
+  padding-bottom: 50px;
+}

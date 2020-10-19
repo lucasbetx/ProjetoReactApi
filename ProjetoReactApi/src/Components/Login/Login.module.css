@@ -1,0 +1,18 @@
+.login{
+  display: grid;
+  grid-template-columns: 1fr ;
+  background-color:white;
+  margin: 55px auto;
+  padding: 30px;
+  max-width: 655px;
+  border-radius: 10px;
+  min-width: 650px;
+  border:solid;
+  min-height: 100%;
+}
+
+.forms{
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 1rem;
+}

@@ -1,0 +1,88 @@
+.header {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: white;
+  top: 0px;
+  border-bottom: solid;
+  border-width: 1px;;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.Logo{
+  max-width: 6.5rem;
+}
+
+.LogoPosLogin{
+  max-width: 6.5rem;
+  margin-left: 7rem;
+}
+
+.login {
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.login::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  background: url('../Assets/usuario.svg') no-repeat center center;
+  margin-left: 0.5rem;
+  position: relative;
+  top: -1px;
+}
+
+.home {
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.home::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 26px;
+  background: url('../Assets/home.svg') no-repeat center center;
+  margin-left: 0.5rem;
+  position: relative;
+  top: -1px;
+}
+
+.icoProd{
+  width:30px;
+}
+
+.itensLeft{
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  
+}
+
+.icoLogout{
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  width:30px;
+ font-family: inherit;
+ border:0;
+ padding:0;
+ margin-left: 10px;
+ background:white;
+}

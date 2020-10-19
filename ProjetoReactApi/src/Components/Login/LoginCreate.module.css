@@ -1,0 +1,29 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 4.5rem;
+  margin-top: 2rem;
+  width: 35rem;
+}
+
+.title{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.LoginImg{
+  align-items: center;
+  text-align: -webkit-center;
+  padding:1rem;
+}
+
+.imgLogin{
+  width:8rem;
+  margin-bottom: 1rem;
+}
