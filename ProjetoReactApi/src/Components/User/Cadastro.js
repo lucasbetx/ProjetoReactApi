@@ -5,6 +5,10 @@ import Input from '../Forms/Input';
 import styles from './Cadastro.module.css';
 import { useNavigate } from 'react-router-dom';
 import { UseContext } from '../../UseContext';
+import cadastro from '../../Assets/produtos.png';
+import lixo from '../../Assets/lixo.png';
+import list from '../../Assets/list.png';
+import edit from '../../Assets/edit.png';
 
 const Cadastro = () => {
   const { createProduct } = React.useContext(UseContext);
@@ -23,8 +27,28 @@ const Cadastro = () => {
 
   return (
     <section className={styles.cadast}>
-      <div>
-        <h1>Cadastrar Produtos</h1>
+      <div className={styles.menu}>
+        <img
+          src={list}
+          class={styles.icoIcoProd}
+          onClick={() => navigate('/user/listar')}
+        />
+        <img
+          src={edit}
+          class={styles.icoIcoProd}
+          onClick={() => navigate('/user/editar')}
+        />
+        <img
+          src={lixo}
+          class={styles.icoIcoProd}
+          onClick={() => navigate('/user/deletar')}
+        />
+      </div>
+      <div className={styles.titleCadastro}>
+        <div className={styles.alignProds}>
+          <img src={cadastro} className={styles.imgLogin} />
+        </div>
+        <h1>Cadastrar Produto</h1>
       </div>
       <div className={styles.form}>
         <form className="animeLeft" onSubmit={handleSubmitCadastro}>

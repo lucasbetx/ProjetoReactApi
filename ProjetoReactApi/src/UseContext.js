@@ -39,7 +39,6 @@ export const UseStorage = ({ children }) => {
         if (response.data.user.id) {
           sessionStorage.setItem('token', response.data.token);
           getUser(sessionStorage.getItem('token'));
-          navigate('/user');
           localStorage.setItem('@welcome-app/email', email);
           document.location.reload(true);
         }

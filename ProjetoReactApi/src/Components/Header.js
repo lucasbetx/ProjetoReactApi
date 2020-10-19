@@ -24,7 +24,7 @@ const Header = () => {
             {' '}
             &nbsp; &nbsp;&nbsp;
             <Link to="/user" className={styles.icoProd}>
-              <img src={prod} class={styles.icoIcoProd} />
+              <img src={prod} />
             </Link>{' '}
             <button onClick={handleLogout} className={styles.icoLogout}>
               <img src={logout} className={styles.icoLogout} />

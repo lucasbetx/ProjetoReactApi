@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import styles from './User.module.css';
 import Cadastro from './Cadastro';
 import user from '../../Assets/face.png';
+import Deletar from './Deletar';
+import edit from '../../Assets/edit.png';
 
 const User = () => {
   const username = localStorage.getItem('@welcome-app/email');
@@ -12,6 +14,7 @@ const User = () => {
       <div>
         <Routes>
           <Route path="/" element={<Cadastro />} />
+          <Route path="deletar" element={<Deletar />} />
         </Routes>
       </div>
     );

@@ -1,0 +1,57 @@
+.cadast{
+  width: 680px; 
+  grid-gap: 2rem;
+  border: solid;
+  margin: 55px auto;
+  border-radius: 15px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 15rem;
+  
+  }
+  .form{
+    margin-top: 5rem;
+    width:80rem;
+  
+  }
+  .btn{
+    margin-top: 5rem;
+    width: 100%;
+  }
+
+  .icoIcoProd{
+    width:30px;
+    cursor: pointer;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titleCadastro{
+    text-align: center;
+  }
+
+  .alignProds{
+    text-align: -webkit-center;
+    padding-top: 4rem;
+  }
+
+  .imgLogin{
+    width:8rem;
+    margin-bottom: 1rem;
+  }
+
+  .input {
+    border: 1px solid;
+    display: block;
+    width: 49%;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    background: #eee;
+    transition: 0.2s;
+    margin-bottom: 1rem;
+  }

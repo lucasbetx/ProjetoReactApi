@@ -14,7 +14,7 @@ const useForm = (type) => {
   function validate(value) {
     if (type === false) return true;
     if (value.length === 0) {
-      setError('Este campo precisa sem preenchido.');
+      setError('Este campo precisa ser preenchido.');
       return false;
     } else if (types[type] && !types[type].regex.test(value)) {
       setError(types[type].message);
