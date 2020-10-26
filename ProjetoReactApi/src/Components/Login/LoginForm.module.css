@@ -4,33 +4,18 @@
   width: 35rem;
 }
 
-.cadastro {
+.register {
   margin-top: 2.6rem;
   width: 35rem;
 }
 
-.cadastro p {
+.register p {
   margin-top: 2rem;
   margin-bottom: 1.2rem;
 }
 
 .title{
   font-size: 2rem;
-}
-
-.subtitle {
-  font-family: var(--type-second);
-  line-height: 1;
-  font-size: 2rem;
-}
-
-.subtitle::after {
-  content: '';
-  display: block;
-  background: black;
-  height: 0.5rem;
-  width: 12.2rem;
-  border-radius: 0.2rem;
 }
 
 .LoginImg{
@@ -44,9 +29,14 @@
   margin-bottom: 1rem;
 }
 
-.logFeito{
+.logDone{
   display:flex;
   justify-content: space-between;
   text-align:center;
   padding-top: 30px;
+  gap: 40px;
+}
+
+.alignEmail{
+  text-align: center;
 }

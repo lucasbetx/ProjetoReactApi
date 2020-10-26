@@ -11,12 +11,10 @@ import user from '../../Assets/user.svg';
 const LoginForm = () => {
   const email = useForm('email');
   const password = useForm();
-
   const { userLogin } = React.useContext(UseContext);
 
   function handleSubmit(event) {
     event.preventDefault();
-
     userLogin(email.value, password.value);
   }
 
@@ -28,20 +26,22 @@ const LoginForm = () => {
   const username = localStorage.getItem('@welcome-app/email');
   if (username !== null) {
     return (
-      <div style={styles.container}>
-        <div className={styles.LoginImg}>
-          <img src={user} className={styles.imgLogin} />
+      <section className="animeLeft">
+        <div>
+          <div className={styles.LoginImg}>
+            <img src={user} className={styles.imgLogin} />
+          </div>
+          <h1 className={styles.alignEmail}>Bem vindo {username}</h1>
+          <div className={styles.logDone}>
+            <Link to="/user" className={stylesBtn.button}>
+              Produtos
+            </Link>
+            <button onClick={handleLogout} className={stylesBtn.button}>
+              Logout
+            </button>
+          </div>
         </div>
-        <h1>Bem vindo {username}</h1>
-        <div className={styles.logFeito}>
-          <Link to="/user" className={stylesBtn.button}>
-            Produtos
-          </Link>
-          <button onClick={handleLogout} className={stylesBtn.button}>
-            Logout
-          </button>
-        </div>
-      </div>
+      </section>
     );
   }
   return (
@@ -61,7 +61,7 @@ const LoginForm = () => {
         />
         <Button type="submit">Entrar</Button>
       </form>
-      <div className={styles.cadastro}>
+      <div className={styles.register}>
         <p>
           Ainda não possui conta?{' '}
           <Link className={stylesBtn.button} to="/login/criar">

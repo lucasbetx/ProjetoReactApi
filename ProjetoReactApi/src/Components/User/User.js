@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import styles from './User.module.css';
 import Cadastro from './Cadastro';
 import user from '../../Assets/face.png';
-import Deletar from './Deletar';
-import edit from '../../Assets/edit.png';
+import Editar from './Editar';
+import Listar from './Listar';
 
 const User = () => {
   const username = localStorage.getItem('@welcome-app/email');
@@ -14,15 +14,18 @@ const User = () => {
       <div>
         <Routes>
           <Route path="/" element={<Cadastro />} />
-          <Route path="deletar" element={<Deletar />} />
+          <Route path="editar" element={<Editar />} />
+          <Route path="listar" element={<Listar />} />
         </Routes>
       </div>
     );
   } else {
     return (
-      <div className={styles.user}>
-        <img src={user} className={styles.imgUser} />
-        <h1>Não há nenhum usuario logado, por favor, faça o login!</h1>
+      <div className="animeLeft">
+        <div className={styles.user}>
+          <img src={user} className={styles.imgUser} />
+          <h1>Não há nenhum usuario logado, por favor, faça o login!</h1>
+        </div>
       </div>
     );
   }

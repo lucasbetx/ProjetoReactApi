@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Input.module.css';
 
-const Input = ({
+const InputNotValidate = ({
   label,
   type,
   name,
@@ -10,13 +10,11 @@ const Input = ({
   error,
   onBlur,
   placeholder,
-  autoComplete,
 }) => {
   return (
     <div className={styles.wrapper}>
       <label htmlFor={name} className={styles.label}>
-        {' '}
-        {label}{' '}
+        {label}
       </label>
       <input
         id={name}
@@ -25,13 +23,11 @@ const Input = ({
         type={type}
         value={value}
         placeholder={placeholder}
-        autoComplete={autoComplete}
         onChange={onChange}
         onBlur={onBlur}
       />
-      {error && <p className={styles.error}>{error}</p>}
     </div>
   );
 };
 
-export default Input;
+export default InputNotValidate;

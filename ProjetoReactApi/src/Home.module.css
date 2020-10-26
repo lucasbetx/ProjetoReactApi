@@ -17,6 +17,8 @@ min-height: 33rem;
   height: 40vmin;
   pointer-events: none;
   animation: App-logo-spin infinite 20s linear;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 
 @keyframes App-logo-spin {
@@ -25,4 +27,8 @@ min-height: 33rem;
   }to {
     transform: rotate(360deg);
   }
+}
+
+.title{
+  text-align: center;
 }

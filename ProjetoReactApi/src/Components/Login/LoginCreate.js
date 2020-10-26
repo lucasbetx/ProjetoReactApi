@@ -6,7 +6,7 @@ import Button from '../Forms/Button';
 import Input from '../Forms/Input';
 import styles from './LoginCreate.module.css';
 import stylesBtn from '../Forms/Button.module.css';
-import cadastro from '../../Assets/cadastro.png';
+import register from '../../Assets/register.png';
 
 const LoginCreate = () => {
   const name = useForm();
@@ -23,7 +23,7 @@ const LoginCreate = () => {
   return (
     <section className="animeLeft">
       <div className={styles.LoginImg}>
-        <img src={cadastro} className={styles.imgLogin} />
+        <img src={register} className={styles.imgLogin} />
         <h1 className="title">Cadastre-se</h1>
       </div>
       <form className={styles.form} onSubmit={handleSubmit}>

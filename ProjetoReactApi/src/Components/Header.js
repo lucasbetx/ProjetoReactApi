@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Logo from '../Assets/Logo.jpg';
 import prod from '../Assets/produtos.png';
 import logout from '../Assets/logout.png';
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
 
 const Header = () => {
   function handleLogout() {
@@ -26,13 +28,17 @@ const Header = () => {
             <Link to="/user" className={styles.icoProd}>
               <img src={prod} />
             </Link>{' '}
-            <button onClick={handleLogout} className={styles.icoLogout}>
-              <img src={logout} className={styles.icoLogout} />
-            </button>
+            <Tippy content="Logout">
+              <button onClick={handleLogout} className={styles.icoLogout}>
+                <img src={logout} className={styles.icoLogout} />
+              </button>
+            </Tippy>
             &nbsp;&nbsp;&nbsp;{' '}
-            <Link to="/login" className={styles.itensLeft}>
-              &nbsp;{username}
-            </Link>
+            <Tippy content="Usuário">
+              <Link to="/login" className={styles.itensLeft}>
+                &nbsp;{username}
+              </Link>
+            </Tippy>
           </p>
         </nav>
       </header>
